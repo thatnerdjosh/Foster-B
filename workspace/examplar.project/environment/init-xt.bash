@@ -97,6 +97,6 @@ apply_patches() {
 	popd 2>&1 >/dev/null
 }
 
-LOG_DIR=${MUTABLE_DIR}/Logs
+LOG_DIR=${OUTDIR}/Logs
 
 

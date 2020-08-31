@@ -11,3 +11,4 @@ build:
 
 clean:
 	${workspace}/makefile.controls/clean.sh
+	${workspace}/makefile.controls/clean_sources.sh

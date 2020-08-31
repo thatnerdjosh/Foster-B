@@ -33,5 +33,7 @@ assert_err $?
 mkdir -vp ${BUILD_DIR}
 assert_err $?
 
-mkdir -p ${LOG_DIR}
+mkdir -vp ${LOG_DIR}
+assert_err $?
+
 exit $?

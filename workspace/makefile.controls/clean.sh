@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -Rfv $workspace/out
+rm -Rfv $workspace/output

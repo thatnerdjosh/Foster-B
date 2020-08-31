@@ -37,7 +37,11 @@ chown -R ${BUILD_USER}:${BUILD_GROUP} ${BUILD_DIR}
 assert_err $?
 
 echo "mutable dir..."
-chown -R ${BUILD_USER}:${BUILD_GROUP} ${MUTABLE_DIR}
+chown -R ${BUILD_USER}:${BUILD_GROUP} ${OUTDIR}
+assert_err $?
+
+echo "log dir..."
+chown -R ${BUILD_USER}:${BUILD_GROUP} ${LOG_DIR}
 assert_err $?
 
 exit $?
