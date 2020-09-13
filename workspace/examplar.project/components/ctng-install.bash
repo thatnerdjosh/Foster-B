@@ -67,12 +67,12 @@ cp -v ${SOURCES_DIR}/ctng.x86_64-multilib.config ./.config
 assert_err $?
 
 # show the config
-ct-ng show-x86_64-multilib-linux-gnu
-assert_err $?
+#ct-ng show-x86_64-multilib-linux-gnu
+#assert_err $?
 
 # set the config
-ct-ng x86_64-multilib-linux-gnu
-assert_err $?
+#ct-ng x86_64-multilib-linux-gnu
+#assert_err $?
 
 # go to menuconfig (debug)
 ct-ng menuconfig
@@ -83,7 +83,7 @@ cp -v ./.config ${SOURCES_DIR}/ctng.x86_64-multilib.config
 assert_err $?
 
 # compile CTNG
-ct-ng build >${LOG_DIR}/ctng_build_out.log 2>${LOG_DIR}/ctng_build_err.log
+ct-ng build
 assert_err $?
 
 dirs -c

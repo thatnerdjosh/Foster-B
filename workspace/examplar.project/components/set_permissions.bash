@@ -44,4 +44,5 @@ echo "log dir..."
 chown -R ${BUILD_USER}:${BUILD_GROUP} ${LOG_DIR}
 assert_err $?
 
+
 exit $?

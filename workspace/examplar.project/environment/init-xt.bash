@@ -36,10 +36,10 @@ OUTDIR=/opt/foster/output
 FOSTER_ROOT=${OUTDIR}/foster_sysroot
 
 # cross build tools used to build the build tools in X_DIR
-CX_DIR=${OUTDIR}/cross-compiler
+CX_DIR=/opt/cross-compiler
 
 # native build tools used to populate FOSTER_ROOT
-X_DIR=${OUTDIR}/target-compiler
+X_DIR=/opt/target-compiler
 
 # CTNG dir
 CTNG_DIR=${OUTDIR}/ctng
@@ -48,6 +48,7 @@ CTNG_DIR=${OUTDIR}/ctng
 # storage directory for source code for everything as its being built
 SOURCES_DIR=${WORKSPACE}/sources
 BUILD_DIR=${OUTDIR}/build
+HOME=${BUILD_DIR}
 
 # patches
 # storage directory for patches

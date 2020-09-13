@@ -34,7 +34,7 @@ function orchestrate_docker
 		-m 16000m \
 		--privileged \
 		-ti \
-		-v $(realpath $workspace):${ws_mount} \
+		-v $(realpath $workspace):${ws_mount}:Z \
 		--name "${IMAGE_NAME}" \
 		-d ${IMAGE_NAME}:latest
 

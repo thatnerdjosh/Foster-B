@@ -30,6 +30,7 @@ apt-get -y install \
 	tree \
 	curl \
 	bzip2 \
+	vim \
 	file
 	
 # f*cking ctng deps
@@ -39,11 +40,14 @@ apt-get -y install \
 	help2man \
 	wget \
 	gawk \
+	gettext \
 	lzip \
 	libtool-bin \
 	libtool-doc \
 	libncurses5-dev \
+	libncurses6-dbg \
 	python \
+	libpython2.7-dev \
 	pkg-config
 	
 exit $?
