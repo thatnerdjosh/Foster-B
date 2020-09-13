@@ -48,6 +48,13 @@ apt-get -y install \
 	libncurses6-dbg \
 	python \
 	libpython2.7-dev \
-	pkg-config
+	pkg-config \
+	m4 \
+	zlib1g-dev \
+	make \
+	p7zip \
+	libgmp-dev \
+	libmpfr-dev
+
 	
 exit $?
