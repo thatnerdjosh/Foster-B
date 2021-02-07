@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# fix an issue with open files limit on some hosts
+ulimit -l unlimited
+ulimit -n 10240 
+ulimit -c unlimited
+
+
 # Executes Examplar from within the shell.
 
 /usr/bin/examplar \
@@ -22,5 +28,4 @@ if [ $retVal -ne 0 ]; then
 		/bin/bash
 	fi
 fi
-/bin/bash
 rm -f debug_shell

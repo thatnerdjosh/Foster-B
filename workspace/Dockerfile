@@ -18,7 +18,7 @@ RUN apt-get -y install git g++ make cmake
 WORKDIR "/opt"
 
 # Pull down Exemplar
-RUN git clone http://source.surroindustries.com/Cycle0/Examplar.git examplar
+RUN git clone http://source.silogroup.org/Cycle0/Examplar.git examplar
 
 # Change dir to Exemplar
 WORKDIR "/opt/examplar"

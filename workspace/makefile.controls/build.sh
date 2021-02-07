@@ -27,11 +27,11 @@ function orchestrate_docker
 
 	# Run the build container and map /foster_workspace as a volume
 	docker run \
-		--cpus 10 \
+		--cpus $(grep -c ^processor /proc/cpuinfo) \
 		--rm \
 		-h "${IMAGE_NAME}" \
 		--memory-swappiness=0 \
-		-m 16000m \
+		-m $(free -m | grep Mem | awk '{ print $4; }')m \
 		--privileged \
 		-ti \
 		-v $(realpath $workspace):${ws_mount}:Z \
