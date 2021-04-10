@@ -12,6 +12,19 @@
 			"group":		"root",
 			"shell":		"/bin/bash",
 			"environment":	"environments/whiptail.bash"
+		},
+		{
+			"name":			"generate cross-compiler",
+			"active":		true,
+			"required":		false,
+			"target":		"components/install_crosstool-ng.bash",
+			"rectify":		false,
+			"rectifier":	"",
+			"log":			true,
+			"user":			"root",
+			"group":		"root",
+			"shell":		"/bin/bash",
+			"environment":	"environments/cross-compiler_generation.bash"
 		}
 	]
 }

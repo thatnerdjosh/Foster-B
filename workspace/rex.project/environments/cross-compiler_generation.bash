@@ -1,7 +1,8 @@
 # Cross-compiler generation environment file.
 
+###################
 # Terminology
-
+###################
 ## Sysroot
 #
 # A sysroot is a directory which is considered to be the root directory 
@@ -30,3 +31,17 @@
 # linked header files and sources, and a prefix deals with artifacts of
 # your build.
 
+#################
+# Environment
+##################
+# asserts that the last command retrurned zero.  allows to supply a 
+# variable for capture 
+assert_zero() {
+	if [[ "$1" -eq 0 ]]; then 
+		return
+	else
+		exit $1
+	fi
+}
+
+SYSROOT=/opt/foster/sysroot
