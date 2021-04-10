@@ -1,22 +1,17 @@
 # Foster B
 
-This is a skeletal implementation of an Examplar project.
+This is a prototyping surface for Foster, which is a Rex project.
 
-The make file will spin up a docker container.
+Foster generates a cross-compiler and then cross-compiles a linux installer image from raw sources.
 
-That docker container will download the Examplar source code and compile it.
+This is Variant B of this effort.
 
-The container will then execute this examplar project.
+This project is a part of a series of projects intended to create SURRO Linux.
 
-Examplar is a harness tool that executes shell scripts.  The order of the units that examplar executes are specified in the plan file.  The definitions and execution context of those units are in the units files.  Whenever Examplar runs a script, it will first source the environment file specified for that unit.  More details about how Examplar works can be found at source.surroindustries.com
+## Ownership
 
-This is an attempt to integrate crosstool-ng so we can shift reliability of the build tools
-to an external source for SURRO Linux.
+This project is owned by SILO GROUP and Christopher Punches, and was authored in 2021.  All rights reserved:
 
-* CTNG should be compiled to /opt/ctng
-* a crosstool chain should be compiled using CTNG to /opt/cross-compiler
-* a native toolchain for the chroot should be compiled with /opt/cross-compiler to /opt/compiler
+While a Linux distribution itself can't be more restrictive than the GPL, the data, designs, and automations used to generate it can be.  This meets that criteria and should be considered proprietary unless released as otherwise.
 
-The native toolchain in /opt/compiler should be used to compile the chroot, including a native toolchain inside the chroot.
-
-Once a chroot is created, all builds from there will occur from inside the chroot.
+This data and code is open source, but it is not currently considered "free software".

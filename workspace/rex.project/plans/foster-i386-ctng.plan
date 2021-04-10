@@ -1,0 +1,15 @@
+{
+	"plan":
+	[
+		{
+			"name":"Greet User", 
+			"dependencies":[ null ],
+			"comment": "Greeting the user."
+		},
+		{
+			"name":"generate cross-compiler", 
+			"dependencies":[ null ],
+			"comment": "stages, builds, installs crosstools"
+		}
+	]
+}

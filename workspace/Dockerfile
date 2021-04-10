@@ -33,4 +33,4 @@ RUN cmake . && \
 WORKDIR "/opt/foster"
 
 # benign entry point
-ENTRYPOINT [ "bash" ]
+ENTRYPOINT [ "/opt/foster/init.sh" ]

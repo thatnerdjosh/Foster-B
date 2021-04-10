@@ -1,0 +1,17 @@
+{
+	"units": [
+		{
+			"name":			"Greet User",
+			"active":		true,
+			"required":		false,
+			"target":		"components/welcome.bash",
+			"rectify":		false,
+			"rectifier":	"",
+			"log":			true,
+			"user":			"root",
+			"group":		"root",
+			"shell":		"/bin/bash",
+			"environment":	"environments/whiptail.bash"
+		}
+	]
+}
