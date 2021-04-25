@@ -39,8 +39,7 @@ function orchestrate_docker
 		-d ${IMAGE_NAME}:latest
 
 	# Execute the init script
-	docker exec -it "${IMAGE_NAME}" /bin/bash
-	#docker exec -it "${IMAGE_NAME}" ${ws_mount}/init.sh
+	docker exec -it "${IMAGE_NAME}" /opt/foster/init.sh
 
 	# Stop the container
 	docker stop ${IMAGE_NAME}

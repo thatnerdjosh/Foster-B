@@ -14,9 +14,9 @@
 			"environment":	"environments/whiptail.bash"
 		},
 		{
-			"name":			"generate cross-compiler",
+			"name":			"install ct-ng",
 			"active":		true,
-			"required":		false,
+			"required":		true,
 			"target":		"components/install_crosstool-ng.bash",
 			"rectify":		false,
 			"rectifier":	"",
@@ -24,7 +24,47 @@
 			"user":			"root",
 			"group":		"root",
 			"shell":		"/bin/bash",
-			"environment":	"environments/cross-compiler_generation.bash"
+			"environment":	"environments/crosstool-ng_gen_0.bash"
+		},
+		{
+			"name":			"stage ct-ng conf",
+			"active":		true,
+			"required":		true,
+			"target":		"components/stage_ctng_config.bash",
+			"rectify":		false,
+			"rectifier":	"",
+			"log":			true,
+			"user":			"root",
+			"group":		"root",
+			"shell":		"/bin/bash",
+			"environment":	"environments/crosstool-ng_gen_1.bash"
+		},
+		{
+			"name":			"add non-root user",
+			"active":		true,
+			"required":		true,
+			"target":		"components/add_non-root_user.bash",
+			"rectify":		false,
+			"rectifier":	"",
+			"log":			true,
+			"user":			"root",
+			"group":		"root",
+			"shell":		"/bin/bash",
+			"environment":	"environments/crosstool-ng_gen_1.bash"
+		},
+		{
+			"name":			"generate cross toolchain",
+			"active":		true,
+			"required":		true,
+			"target":		"components/generate_x-toolchain.bash",
+			"rectify":		false,
+			"rectifier":	"",
+			"log":			true,
+			"user":			"phanes",
+			"group":		"royalty",
+			"shell":		"/bin/bash",
+			"environment":	"environments/crosstool-ng_gen_1.bash"
 		}
 	]
 }
+

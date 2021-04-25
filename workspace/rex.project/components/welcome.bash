@@ -24,6 +24,4 @@ whiptail \
 ${mid_height} \
 ${max_width}
 
-NAME=$(whiptail --inputbox "What is your name?" 8 39 --title "Getting to know you" 3>&1 1>&2 2>&3)
-
 echo "hello $NAME"
