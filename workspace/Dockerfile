@@ -32,5 +32,5 @@ RUN cmake . && \
 # Development Pull from Local
 WORKDIR "/opt/foster"
 
-# benign entry point
-ENTRYPOINT [ "bash" ]
+# benign entry point, keep container running on restart
+ENTRYPOINT [ "tail", "-f", "/dev/null" ]
