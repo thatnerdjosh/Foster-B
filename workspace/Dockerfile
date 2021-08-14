@@ -1,4 +1,4 @@
-# use the latest version of fedora for the build system
+# use the latest stable version of debian for the build system
 FROM debian:stable
 
 # Environment Variables
